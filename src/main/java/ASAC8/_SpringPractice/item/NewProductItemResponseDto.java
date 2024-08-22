@@ -5,6 +5,8 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.util.List;
+
 @Getter
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class NewProductItemResponseDto {                    // Item : 데이터 베이스 객체 ( 민감한 정보 가 있디. )
@@ -19,6 +21,7 @@ public class NewProductItemResponseDto {                    // Item : 데이터 
     private Double rating;
     private Boolean isBestSeller;
     private Boolean isNew;
+
 
     public static NewProductItemResponseDto of(Item item) {
         return new NewProductItemResponseDto(

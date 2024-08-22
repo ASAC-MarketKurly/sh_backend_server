@@ -5,6 +5,9 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Getter
@@ -20,6 +23,9 @@ public class Item {
     private Integer discountRate;
     private Integer reviewCount;
     private Double rating;
+    private String category;
+    private String brand;
+    private List<String> tags;
     private Boolean isWeekendSpecial;
     private Boolean isBestSeller;
     private Boolean isNew;
@@ -35,6 +41,9 @@ public class Item {
         Integer discountRate,
         Integer reviewCount,
         Double rating,
+        String category,
+        String brand,
+        List<String> tags,
         Boolean isWeekendSpecial,
         Boolean isBestSeller,
         Boolean isNew,
@@ -51,10 +60,14 @@ public class Item {
                 discountRate,
                 reviewCount,
                 rating,
+                category,
+                brand,
+                tags,
                 isWeekendSpecial,
                 isBestSeller,
                 isNew,
                 isLowestPrice
         );
     }
+
 }
