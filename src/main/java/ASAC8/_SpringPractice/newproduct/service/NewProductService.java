@@ -3,7 +3,7 @@ package ASAC8._SpringPractice.newproduct.service;
 import ASAC8._SpringPractice.item.Item;
 import ASAC8._SpringPractice.item.ItemRepository;
 import ASAC8._SpringPractice.item.NewProductItemResponseDto;
-import ASAC8._SpringPractice.newproduct.controller.response.NewProductItemsResponse;
+import ASAC8._SpringPractice.newproduct.controller.response.NewProductItemResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ public class NewProductService {
 
     private final ItemRepository itemRepository;
 
-    public NewProductItemsResponse getNewProduct(){
+    public NewProductItemResponse getNewProduct(){
         List<Item> items = itemRepository.getAllItems();         // 모든 Item 객체를 가져옵니다
         List<Item> newProductItems = items.stream()                  // stream API 를 사용해서
                 .filter(item -> item.getIsNew() && item.getIsBestSeller())    // isNew 와 isBestSeller 가 true 인 Item 만 필터링합니다
@@ -30,8 +30,8 @@ public class NewProductService {
 //              .map((item)-> {
 //                  return NewProductItemResponseDto.of(item)
 //              })
-        NewProductItemsResponse newProductItemsResponse = NewProductItemsResponse.of(response);  //body에서 가공한것을 서비스 로직으로 뺌
+        NewProductItemResponse newProductItemResponse = NewProductItemResponse.of(response);  //body에서 가공한것을 서비스 로직으로 뺌
 
-        return newProductItemsResponse;
+        return newProductItemResponse;
     }
 }

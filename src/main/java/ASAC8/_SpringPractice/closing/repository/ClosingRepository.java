@@ -14,8 +14,8 @@ public class ClosingRepository implements Repository{
     @Override
     public List<Item> getAllItems(){
 
-        List<Item> closingitemList = itemRepository.getAllItems();
+        List<Item> closingItemList = itemRepository.getAllItems();
 
-        return closingitemList;
+        return closingItemList;
     }
 }

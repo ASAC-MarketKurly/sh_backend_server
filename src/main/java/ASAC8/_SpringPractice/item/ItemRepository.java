@@ -33,7 +33,7 @@ public class ItemRepository {
                     false,
                     true,
                     true,
-                    true
+                    false
             ),
             Item.of(
 
@@ -86,7 +86,7 @@ public class ItemRepository {
                     false,
                     true,
                     true,
-                    true
+                    false
             ),Item.of(
 
                     "다론 튜나 스틱 버라이어티팩 WW",
@@ -140,7 +140,7 @@ public class ItemRepository {
                     false
             ),Item.of(
 
-                    "가론 튜나 스틱 버라이어티팩",
+                    "가론 튜나 스틱 버라이어티팩 LL",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
                     30000,
@@ -154,7 +154,7 @@ public class ItemRepository {
                     false,
                     false,
                     true,
-                    false
+                    true
             ),Item.of(
 
                     "하론 튜나 스틱 버라이어티팩 TT",
@@ -174,7 +174,7 @@ public class ItemRepository {
                     false
             ),Item.of(
 
-                    "아론 튜나 스틱 버라이어티팩",
+                    "아론 튜나 스틱 버라이어티팩 LL",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
                     30000,
@@ -188,10 +188,10 @@ public class ItemRepository {
                     false,
                     false,
                     true,
-                    false
+                    true
             ),Item.of(
 
-                    "자론 튜나 스틱 버라이어티팩",
+                    "자론 튜나 스틱 버라이어티팩 LL",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
                     30000,
@@ -205,7 +205,7 @@ public class ItemRepository {
                     false,
                     false,
                     true,
-                    false
+                    true
             ),Item.of(
 
                     "카론 튜나 스틱 버라이어티팩 TT",
@@ -242,7 +242,7 @@ public class ItemRepository {
                     false
             ),Item.of(
 
-                    "요론 튜나 스틱 버라이어티팩",
+                    "요론 튜나 스틱 버라이어티팩 LL",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
                     30000,
@@ -256,10 +256,10 @@ public class ItemRepository {
                     false,
                     false,
                     true,
-                    false
+                    true
             ),Item.of(
 
-                    "여론 튜나 스틱 버라이어티팩",
+                    "여론 튜나 스틱 버라이어티팩 LL",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
                     30000,
@@ -273,7 +273,7 @@ public class ItemRepository {
                     false,
                     false,
                     true,
-                    false
+                    true
             )
     );
 
