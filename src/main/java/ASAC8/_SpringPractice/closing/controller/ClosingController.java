@@ -17,7 +17,7 @@ public class ClosingController {
     private final ClosingService closingService;  // ClosingService 클래스 빈 주입 !
 
     @GetMapping("/closingSaleItems")
-    public ResponseEntity<ClosingItemResponseDto> getClosingItems(){
+    public ResponseEntity<ClosingItemResponse> getClosingItems(){
         ClosingItemResponse response = closingService.getClosing();
 
         return ResponseEntity

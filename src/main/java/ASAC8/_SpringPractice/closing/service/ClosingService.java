@@ -16,7 +16,7 @@ public class ClosingService {
 
     private final ItemRepository itemRepository;
 
-    public List<ClosingItemResponseDto> getClosing() {
+    public ClosingItemResponse getClosing() {
         List<Item> items = itemRepository.getAllItems();
         List<Item> closingItems = items.stream()
                 .filter(item -> item.getDiscountRate() >= 30) // discountRate 가 30 이상인 항목 필터링
@@ -28,6 +28,6 @@ public class ClosingService {
 
         ClosingItemResponse closingItemResponse = ClosingItemResponse.of(response);
 
-        return response;
+        return closingItemResponse;
     }
 }
