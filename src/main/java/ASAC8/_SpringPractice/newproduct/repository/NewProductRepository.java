@@ -15,7 +15,6 @@ public class NewProductRepository implements Repository{
 
         List<Item> itemList = itemRepository.getItemList();       //getItemList 를 사용하여 모든 객체를 불러온다
 
-
         return itemList;        // 불러온 객체 ( itemList ) 를 반환한다
     }
 }
