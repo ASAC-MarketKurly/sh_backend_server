@@ -1,9 +1,10 @@
 package ASAC8._SpringPractice.main.service;
 
+import ASAC8._SpringPractice.item.BannerItemRepository;
 import ASAC8._SpringPractice.item.Item;
 import ASAC8._SpringPractice.item.ItemRepository;
-import ASAC8._SpringPractice.item.MainItemResponseDto;
-import ASAC8._SpringPractice.main.controller.response.MainItemsResponse;
+import ASAC8._SpringPractice.item.MainItem;
+import ASAC8._SpringPractice.main.controller.response.MainItemsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,16 +14,16 @@ import java.util.List;
 @Service
 public class MainService {
 
-    private final ItemRepository itemRepository;
+    private final BannerItemRepository bannerItemRepository;
 
-    public MainItemsResponse getMain(){
-        List<Item> items = itemRepository.getAllItems();
-        List<MainItemResponseDto> response = items.stream()
-                .map(MainItemResponseDto::of)
+    public MainItemsResponseDto getMain(){
+        List<Item> items = bannerItemRepository.getAllItems();
+        List<MainItem> response = items.stream()
+                .map(MainItem::of)
                 .toList();
 
-        MainItemsResponse mainItemsResponse = MainItemsResponse.of(response);
+        MainItemsResponseDto mainItemsResponseDto = MainItemsResponseDto.of(response);
 
-        return mainItemsResponse;
+        return mainItemsResponseDto;
     }
 }
