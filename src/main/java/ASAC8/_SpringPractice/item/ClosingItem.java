@@ -1,14 +1,16 @@
 package ASAC8._SpringPractice.item;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.ToString;
 
-import java.util.List;
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@ToString
 @Getter
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class LowestItemResponseDto {
+public class ClosingItem {
     private Integer id;
     private String title;
     private String imageUrl;
@@ -18,10 +20,10 @@ public class LowestItemResponseDto {
     private Integer discountRate;
     private Integer reviewCount;
     private Double rating;
-    private Boolean isLowestPrice;
 
-    public static LowestItemResponseDto of(Item item){
-        return new LowestItemResponseDto(
+
+    public static ClosingItem of(Item item) {
+        return new ClosingItem(
                 item.getId(),
                 item.getTitle(),
                 item.getImageUrl(),
@@ -30,8 +32,7 @@ public class LowestItemResponseDto {
                 item.getSalePrice(),
                 item.getDiscountRate(),
                 item.getReviewCount(),
-                item.getRating(),
-                item.getIsLowestPrice()
+                item.getRating()
         );
     }
 }

@@ -1,6 +1,6 @@
 package ASAC8._SpringPractice.lowest.controller;
 
-import ASAC8._SpringPractice.lowest.controller.response.LowestItemResponse;
+import ASAC8._SpringPractice.lowest.controller.response.LowestItemResponseDto;
 import ASAC8._SpringPractice.lowest.service.LowestService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,8 +16,8 @@ public class LowestController {
     private final LowestService lowestService;
 
     @GetMapping("/lowest-price")
-    public ResponseEntity<LowestItemResponse> getLowestItems(){
-        LowestItemResponse response = lowestService.getLowest();
+    public ResponseEntity<LowestItemResponseDto> getLowestItems(){
+        LowestItemResponseDto response = lowestService.getLowest();
 
         return ResponseEntity
                 .status(200)

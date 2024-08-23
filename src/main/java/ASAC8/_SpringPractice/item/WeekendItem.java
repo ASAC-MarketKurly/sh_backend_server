@@ -1,37 +1,34 @@
 package ASAC8._SpringPractice.item;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.ToString;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@ToString
 @Getter
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class ClosingItemResponseDto {
+@AllArgsConstructor
+public class WeekendItem {
     private Integer id;
     private String title;
-    private String imageUrl;
     private String description;
+    private String imageUrl;
     private Integer originalPrice;
     private Integer salePrice;
     private Integer discountRate;
     private Integer reviewCount;
     private Double rating;
+    private Boolean isWeekendSpecial;
 
-    public static ClosingItemResponseDto of(Item item) {
-        return new ClosingItemResponseDto(
+    public static WeekendItem of(Item item){
+        return new WeekendItem(
                 item.getId(),
                 item.getTitle(),
-                item.getImageUrl(),
                 item.getDescription(),
+                item.getImageUrl(),
                 item.getOriginalPrice(),
                 item.getSalePrice(),
                 item.getDiscountRate(),
                 item.getReviewCount(),
-                item.getRating()
+                item.getRating(),
+                item.getIsWeekendSpecial()
         );
     }
 }

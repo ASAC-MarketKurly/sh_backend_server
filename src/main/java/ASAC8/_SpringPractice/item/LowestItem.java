@@ -1,34 +1,35 @@
 package ASAC8._SpringPractice.item;
 
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
-@AllArgsConstructor
-public class WeekendItemResponseDto {
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+public class LowestItem {
     private Integer id;
     private String title;
-    private String description;
     private String imageUrl;
+    private String description;
     private Integer originalPrice;
     private Integer salePrice;
     private Integer discountRate;
     private Integer reviewCount;
     private Double rating;
-    private Boolean isWeekendSpecial;
+    private Boolean isLowestPrice;
 
-    public static WeekendItemResponseDto of(Item item){
-        return new WeekendItemResponseDto(
+    public static LowestItem of(Item item){
+        return new LowestItem(
                 item.getId(),
                 item.getTitle(),
-                item.getDescription(),
                 item.getImageUrl(),
+                item.getDescription(),
                 item.getOriginalPrice(),
                 item.getSalePrice(),
                 item.getDiscountRate(),
                 item.getReviewCount(),
                 item.getRating(),
-                item.getIsWeekendSpecial()
+                item.getIsLowestPrice()
         );
     }
 }

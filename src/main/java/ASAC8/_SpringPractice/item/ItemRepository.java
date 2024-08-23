@@ -18,7 +18,6 @@ public class ItemRepository {
 
     List<Item> itemList = Arrays.asList(  // Item 클래스를 List 형태로 itemList 라는 변수명으로 만들고 Arrays 클래스에 asList 로 담아주세요
             Item.of(
-
                     "퓨어 튜나 스틱 버라이어티팩 TT",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -29,14 +28,13 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     true,
                     true,
                     false
             ),
             Item.of(
-
                     "애런 튜나 스틱 버라이어티팩 WW",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -47,14 +45,13 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     true,
                     false,
                     true,
                     false
             ),
             Item.of(
-
                     "바론 튜나 스틱 버라이어티팩 WW",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -65,13 +62,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     true,
                     false,
                     true,
                     false
             ),Item.of(
-
                     "싸론 튜나 스틱 버라이어티팩 TT",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -82,13 +78,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     true,
                     true,
                     false
             ),Item.of(
-
                     "다론 튜나 스틱 버라이어티팩 WW",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -99,13 +94,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     true,
                     false,
                     true,
                     false
             ),Item.of(
-
                     "아론 튜나 스틱 버라이어티팩 TT",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -116,13 +110,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     true,
                     true,
                     false
             ),Item.of(
-
                     "파론 튜나 스틱 버라이어티팩 TT",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -133,13 +126,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     true,
                     true,
                     false
             ),Item.of(
-
                     "가론 튜나 스틱 버라이어티팩 LL",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -150,13 +142,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     false,
                     true,
                     true
             ),Item.of(
-
                     "하론 튜나 스틱 버라이어티팩 TT",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -167,13 +158,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     true,
                     true,
                     false
             ),Item.of(
-
                     "아론 튜나 스틱 버라이어티팩 LL",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -184,13 +174,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     false,
                     true,
                     true
             ),Item.of(
-
                     "자론 튜나 스틱 버라이어티팩 LL",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -201,13 +190,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     false,
                     true,
                     true
             ),Item.of(
-
                     "카론 튜나 스틱 버라이어티팩 TT",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -218,13 +206,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     true,
                     true,
                     false
             ),Item.of(
-
                     "시론 튜나 스틱 버라이어티팩 WW",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -235,13 +222,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     true,
                     false,
                     true,
                     false
             ),Item.of(
-
                     "요론 튜나 스틱 버라이어티팩 LL",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -252,13 +238,12 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     false,
                     true,
                     true
             ),Item.of(
-
                     "여론 튜나 스틱 버라이어티팩 LL",
                     "60개입 대용량 팩으로 즐기는 휴먼 그레이드 런치 스틱 간식",
                     "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg",
@@ -269,7 +254,7 @@ public class ItemRepository {
                     4.5,
                     "그루밍",
                     "퓨리클린",
-                    Collections.singletonList("\"샴푸\",\"저자극\",\"고양이\""),
+                    Arrays.asList("샴푸","저자극","고양이"),
                     false,
                     false,
                     true,

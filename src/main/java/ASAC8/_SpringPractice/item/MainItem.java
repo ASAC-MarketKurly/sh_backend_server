@@ -5,13 +5,13 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class MainItemResponseDto {
+public class MainItem {
     private Integer id;
     private String title;
     private String imageUrl;
 
-    public static MainItemResponseDto of(Item item){
-        return new MainItemResponseDto(
+    public static MainItem of(Item item){
+        return new MainItem(
                 item.getId(),
                 item.getTitle(),
                 item.getImageUrl()

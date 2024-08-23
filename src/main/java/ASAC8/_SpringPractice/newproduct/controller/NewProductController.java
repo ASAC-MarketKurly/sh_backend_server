@@ -1,6 +1,6 @@
 package ASAC8._SpringPractice.newproduct.controller;
 
-import ASAC8._SpringPractice.newproduct.controller.response.NewProductItemResponse;
+import ASAC8._SpringPractice.newproduct.controller.response.NewProductItemResponseDto;
 import ASAC8._SpringPractice.newproduct.service.NewProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,8 +16,8 @@ public class NewProductController {
     private final NewProductService newProductService;      // NewProductService 클래스 빈 주입 !
 
     @GetMapping("/approved-new-products")
-    public ResponseEntity<NewProductItemResponse> getNewProductItems(){      // 상태값이랑 데이터를 보내주려고
-        NewProductItemResponse response = newProductService.getNewProduct();
+    public ResponseEntity<NewProductItemResponseDto> getNewProductItems(){      // 상태값이랑 데이터를 보내주려고
+        NewProductItemResponseDto response = newProductService.getNewProduct();
 
         return ResponseEntity
                 .status(200)                                        // 상태값, 데이터 두개를 보내준다
