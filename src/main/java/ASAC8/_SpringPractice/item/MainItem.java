@@ -10,11 +10,11 @@ public class MainItem {
     private String title;
     private String imageUrl;
 
-    public static MainItem of(Item item){
+    public static MainItem of(BannerItem bannerItem){
         return new MainItem(
-                item.getId(),
-                item.getTitle(),
-                item.getImageUrl()
+                bannerItem.getId(),
+                bannerItem.getTitle(),
+                bannerItem.getImageUrl()
         );
     }
 }
