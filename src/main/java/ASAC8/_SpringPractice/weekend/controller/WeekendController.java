@@ -1,5 +1,6 @@
 package ASAC8._SpringPractice.weekend.controller;
 
+import ASAC8._SpringPractice.AaronException;
 import ASAC8._SpringPractice.weekend.controller.response.WeekendItemsResponseDto;
 import ASAC8._SpringPractice.weekend.service.WeekendService;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +19,10 @@ public class WeekendController {
     @GetMapping("weekend-special")
     public ResponseEntity<WeekendItemsResponseDto> getWeekendItems(){
         WeekendItemsResponseDto response = weekendService.getWeekend();
+
+        if (true) {
+            throw new AaronException("뜬금없이 발생시켜볼까 에러");    // 뜬금없는 에러
+        }
 
         return ResponseEntity
                 .status(200)
