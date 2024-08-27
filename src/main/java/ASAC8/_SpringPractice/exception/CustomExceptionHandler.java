@@ -1,4 +1,4 @@
-package ASAC8._SpringPractice;
+package ASAC8._SpringPractice.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

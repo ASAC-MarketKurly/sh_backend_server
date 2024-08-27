@@ -1,4 +1,4 @@
-package ASAC8._SpringPractice;
+package ASAC8._SpringPractice.exception;
 
 public class AaronException extends RuntimeException{
     // AaronException 의 생성자에서 RuntimeException 의 생성자를 부른거야

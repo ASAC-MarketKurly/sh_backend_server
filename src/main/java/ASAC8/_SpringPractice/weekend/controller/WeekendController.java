@@ -1,6 +1,6 @@
 package ASAC8._SpringPractice.weekend.controller;
 
-import ASAC8._SpringPractice.AaronException;
+import ASAC8._SpringPractice.exception.AaronException;
 import ASAC8._SpringPractice.weekend.controller.response.WeekendItemsResponseDto;
 import ASAC8._SpringPractice.weekend.service.WeekendService;
 import lombok.RequiredArgsConstructor;
