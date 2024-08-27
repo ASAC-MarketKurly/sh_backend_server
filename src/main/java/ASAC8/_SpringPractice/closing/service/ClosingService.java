@@ -21,7 +21,7 @@ public class ClosingService {
                 .filter(item -> item.getDiscountRate() >= 30) // discountRate 가 30 이상인 항목 필터링
                 .toList(); // 결과를 리스트로 수집
 
-        List<ClosingItem> response = closingItems.stream()  // 필터링된 Item 객체들을 ClosingResponseDto 로 변환합니다     // closingItem 이어야한다
+        List<ClosingItem> response = closingItems.stream()  // 필터링된 Item 객체들을 ClosingItem 로 변환합니다
                 .map(ClosingItem::of)                       // 아이템에 있는 값중 필요한것만 노출하려고
                 .toList();
 
