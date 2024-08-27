@@ -3,6 +3,7 @@ package ASAC8._SpringPractice.item;
 import lombok.Getter;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,7 +11,8 @@ import java.util.List;
 @Repository
 public class BannerItemRepository {
 
-    List<BannerItem> bannerItemList = Arrays.asList (
+    List<BannerItem> bannerItemList = new ArrayList<>(
+        Arrays.asList(
             BannerItem.of (
                     1,
                     "asdf",
@@ -57,8 +59,16 @@ public class BannerItemRepository {
                     "8",
                     "https://product-image.kurly.com/hdims/resize/%3E1900x%3E370/quality/85/src/banner/main/pc/img/16fbbddd-42f0-4a67-a15b-0aec0ef74e87.jpg"
             )
+        )
     );
+
     public List<BannerItem> getAllItems() {     // 위에 저장한 ItemList 를 반환하는 메서드 getAllItems 메서드 이름도 의미 있게 !
+        return new ArrayList<>(bannerItemList);  // 데이터를 ArrayList 에 넣어주기
+    }
+
+    public List<BannerItem> addBannerItem(BannerItem bannerItem) {
+        bannerItemList.add(bannerItem);
+
         return bannerItemList;
     }
 }

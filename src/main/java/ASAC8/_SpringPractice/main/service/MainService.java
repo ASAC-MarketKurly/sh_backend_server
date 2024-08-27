@@ -4,6 +4,7 @@ import ASAC8._SpringPractice.item.*;
 import ASAC8._SpringPractice.main.controller.response.MainItemsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
@@ -25,5 +26,13 @@ public class MainService {
         return MainItemsResponseDto.of(response);
     }
 
-//    public MainItemsResponseDto
+    public MainItemsResponseDto createMain (BannerItem bannerItem) {
+        bannerItemRepository.addBannerItem(bannerItem);
+        List<BannerItem> updatedBannerItems = bannerItemRepository.getAllItems();
+        List<MainItem> response = updatedBannerItems.stream()
+                .map(MainItem::of)
+                .toList();
+
+        return MainItemsResponseDto.of(response);
+    }
 }
