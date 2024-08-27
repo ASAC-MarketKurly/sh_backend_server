@@ -7,6 +7,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @ToString
 @Getter
@@ -16,11 +19,13 @@ public class BannerItem {
     private String title;
     private String imageUrl;
 
-    public static BannerItem of(Item item) {
+    public static BannerItem of(Integer id,
+                                String title,
+                                String imageUrl) {
         return new BannerItem(
-                item.getId(),
-                item.getTitle(),
-                item.getImageUrl()
+                id,
+                title,
+                imageUrl
         );
     }
 }
