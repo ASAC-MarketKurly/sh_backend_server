@@ -18,16 +18,17 @@ public class LowestService {
     public LowestItemResponseDto getLowest(){
         List<Item> items = itemRepository.getAllItems();
         List<Item> lowestItems = items.stream()
-                .filter(item->item.getIsLowestPrice())
+                .filter(Item::getIsLowestPrice)
                 .toList();
 
         List<LowestItem> response = lowestItems.stream()
                 .map(LowestItem::of)
                 .toList();
 
-        LowestItemResponseDto lowestItemResponseDto = LowestItemResponseDto.of(response);
-
-        return lowestItemResponseDto;
+//        LowestItemResponseDto lowestItemResponseDto = LowestItemResponseDto.of(response);
+//
+//        return lowestItemResponseDto;
+        return LowestItemResponseDto.of(response);
 
     }
 }

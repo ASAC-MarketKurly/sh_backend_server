@@ -18,15 +18,17 @@ public class WeekendService {
     public WeekendItemsResponseDto getWeekend(){
         List<Item> items = itemRepository.getAllItems();
         List<Item> weekendItems = items.stream()
-                .filter(item->item.getIsWeekendSpecial())
+//                .filter(item->item.getIsWeekendSpecial())
+                .filter(Item::getIsWeekendSpecial)
                 .toList();
 
         List<WeekendItem> response = weekendItems.stream()
                 .map(WeekendItem::of)
                 .toList();
 
-        WeekendItemsResponseDto weekendItemsResponseDto = WeekendItemsResponseDto.of(response);
-
-        return weekendItemsResponseDto;
+//        WeekendItemsResponseDto weekendItemsResponseDto = WeekendItemsResponseDto.of(response);
+//
+//        return weekendItemsResponseDto;
+        return WeekendItemsResponseDto.of(response);
     }
 }

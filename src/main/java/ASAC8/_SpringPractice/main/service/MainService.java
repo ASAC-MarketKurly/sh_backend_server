@@ -19,8 +19,11 @@ public class MainService {
                 .map(MainItem::of)
                 .toList();
 
-        MainItemsResponseDto mainItemsResponseDto = MainItemsResponseDto.of(response);
-
-        return mainItemsResponseDto;
+//        MainItemsResponseDto mainItemsResponseDto = MainItemsResponseDto.of(response);
+//
+//        return mainItemsResponseDto;
+        return MainItemsResponseDto.of(response);
     }
+
+//    public MainItemsResponseDto
 }

@@ -25,8 +25,9 @@ public class ClosingService {
                 .map(ClosingItem::of)                       // 아이템에 있는 값중 필요한것만 노출하려고
                 .toList();
 
-        ClosingItemResponseDto closingItemResponseDto = ClosingItemResponseDto.of(response);  // responseDto 이어야하고     함수에서 함수로 반환할때 dto
-
-        return closingItemResponseDto;
+//        ClosingItemResponseDto closingItemResponseDto = ClosingItemResponseDto.of(response);  // responseDto 이어야하고     함수에서 함수로 반환할때 dto
+//
+//        return closingItemResponseDto;
+        return ClosingItemResponseDto.of(response);
     }
 }

@@ -34,9 +34,10 @@ public class NewProductService {
 //              .map((item)-> {
 //                  return NewProductItemResponseDto.of(item)
 //              })
-        NewProductItemResponseDto newProductItemResponseDto = NewProductItemResponseDto.of(response);  //body에서 가공한것을 서비스 로직으로 뺌
-
-        return newProductItemResponseDto;
+//        NewProductItemResponseDto newProductItemResponseDto = NewProductItemResponseDto.of(response);  //body에서 가공한것을 서비스 로직으로 뺌
+//
+//        return newProductItemResponseDto;
+        return NewProductItemResponseDto.of(response);
 //        throw new NullPointerException();
 //        return null;
     }
