@@ -20,9 +20,9 @@ public class WeekendController {
     public ResponseEntity<WeekendItemsResponseDto> getWeekendItems(){
         WeekendItemsResponseDto response = weekendService.getWeekend();
 
-        if (true) {
-            throw new AaronException("뜬금없이 발생시켜볼까 에러");    // 뜬금없는 에러
-        }
+//        if (true) {
+//            throw new AaronException("뜬금없이 발생시켜볼까 에러");    // 뜬금없는 에러
+//        }
 
         return ResponseEntity
                 .status(200)

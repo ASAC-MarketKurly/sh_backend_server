@@ -17,9 +17,9 @@ public class NewProductService {
     private final ItemRepository itemRepository;
 
     public NewProductItemResponseDto getNewProduct(){
-        if (true) {
-            throw new AaronException("에러 발생했다 !!");         // if true 이기때문에 무조건 발생
-        }
+//        if (true) {
+//            throw new AaronException("에러 발생했다 !!");         // if true 이기때문에 무조건 발생
+//        }
         List<Item> items = itemRepository.getAllItems();         // 모든 Item 객체를 가져옵니다
         List<Item> newProductItems = items.stream()                  // stream API 를 사용해서
                 .filter(item -> item.getIsNew() && item.getIsBestSeller())    // isNew 와 isBestSeller 가 true 인 Item 만 필터링합니다
