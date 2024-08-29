@@ -1,5 +1,6 @@
 package ASAC8._SpringPractice.item;
 
+import ASAC8._SpringPractice.exception.AaronException;
 import lombok.Getter;
 import org.springframework.stereotype.Repository;
 
@@ -15,7 +16,7 @@ public class BannerItemRepository {
         Arrays.asList(
             BannerItem.of (
                     1,
-                    "asdf",
+                    "1",
                     "https://product-image.kurly.com/hdims/resize/%3E1900x%3E370/quality/85/src/banner/main/pc/img/e8a7168a-d665-4795-9fa0-2b9bcff17c7e.png"
             ),
             BannerItem.of (
@@ -66,8 +67,40 @@ public class BannerItemRepository {
         return new ArrayList<>(bannerItemList);  // 데이터를 ArrayList 에 넣어주기
     }
 
-    public List<BannerItem> addBannerItem(BannerItem bannerItem) {
+    public List<BannerItem> addBannerItem (BannerItem bannerItem) {
         bannerItemList.add(bannerItem);
+
+        return bannerItemList;
+    }
+
+    public BannerItem updateBannerItem (Integer id, String title, String imageUrl) {
+
+        if(id==0){
+            throw new AaronException("Client 측에서 id 값에 0을 넣는 에러발생");
+        }
+        BannerItem bannerItem = bannerItemList.get(id-1);
+        bannerItem.setId(id);
+        bannerItem.setTitle(title);
+        bannerItem.setImageUrl(imageUrl);
+
+        return bannerItem;
+    }
+
+    public BannerItem deleteBannerItem (Integer id) {
+
+        BannerItem RemoveBannerItem = bannerItemList.get(id-1);
+
+        if(RemoveBannerItem != null){
+            bannerItemList.remove(id-1);
+        } else {
+            throw new RuntimeException();
+        }
+
+        return RemoveBannerItem;
+    }
+
+    public List<BannerItem> deleteAllBannerItem () {
+        bannerItemList.clear();
 
         return bannerItemList;
     }
