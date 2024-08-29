@@ -10,6 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @ToString
 @Getter
+@Setter
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class BannerItem {
     private Integer id;
