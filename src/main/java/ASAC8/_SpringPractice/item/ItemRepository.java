@@ -2,9 +2,7 @@ package ASAC8._SpringPractice.item;
 
 import lombok.Getter;
 import org.springframework.stereotype.Repository;
-
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 // 모든 상품데이터가 저장된 거대 저장소

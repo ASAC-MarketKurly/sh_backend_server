@@ -1,13 +1,11 @@
 package ASAC8._SpringPractice.newproduct.service;
 
-import ASAC8._SpringPractice.exception.AaronException;
 import ASAC8._SpringPractice.item.Item;
 import ASAC8._SpringPractice.item.ItemRepository;
 import ASAC8._SpringPractice.item.NewProductItem;
 import ASAC8._SpringPractice.newproduct.controller.response.NewProductItemResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -37,7 +35,7 @@ public class NewProductService {
 //        NewProductItemResponseDto newProductItemResponseDto = NewProductItemResponseDto.of(response);  //body에서 가공한것을 서비스 로직으로 뺌
 //
 //        return newProductItemResponseDto;
-        return NewProductItemResponseDto.of(response);
+        return NewProductItemResponseDto.of(response);       //throw 가 리턴을 대체하는지? 아니면 리턴 전에 throw 로 처리가 되는건지?
 //        throw new NullPointerException();
 //        return null;
     }

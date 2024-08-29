@@ -3,7 +3,6 @@ package ASAC8._SpringPractice.weekend.controller.response;
 import ASAC8._SpringPractice.item.WeekendItem;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-
 import java.util.List;
 
 @Getter

@@ -1,12 +1,8 @@
 package ASAC8._SpringPractice.item;
 
-
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-
-import java.sql.Array;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 

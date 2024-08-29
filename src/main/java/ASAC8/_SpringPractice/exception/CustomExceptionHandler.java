@@ -5,7 +5,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-
 // 역할과 책임의 분리 : 책임분리
 // - CustomExceptionHandler : 에러 중앙 처리
 // - NewProductItemsController : 고객 반응 신상품 반환등 API 제공
