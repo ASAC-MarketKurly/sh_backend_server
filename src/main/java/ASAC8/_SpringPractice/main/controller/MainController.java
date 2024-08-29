@@ -14,8 +14,18 @@ public class MainController {
 
     private final MainService mainService;
 
-    @GetMapping("main-slider")
-    public ResponseEntity<MainItemsResponseDto> getMainItems(){
+    @PostMapping("/add")
+    public ResponseEntity<MainItemsResponseDto> postMainItems (@RequestBody BannerItem bannerItem) {
+
+        MainItemsResponseDto response = mainService.createMain(bannerItem);
+
+        return ResponseEntity
+                .status(200)
+                .body(response);
+    }
+
+    @GetMapping("/main-slider")
+    public ResponseEntity<MainItemsResponseDto> getMainItems (){
         MainItemsResponseDto response = mainService.getMain();
 
         return ResponseEntity
@@ -23,10 +33,27 @@ public class MainController {
                 .body(response);
     }
 
-    @PostMapping("/add")
-    public ResponseEntity<MainItemsResponseDto> postMainItems(@RequestBody BannerItem bannerItem) {
+    @PutMapping("/main-slider/{id}")
+    public BannerItem putMainItem (@PathVariable Integer id,
+                                  @RequestParam String title,
+                                  @RequestParam String imageUrl)
+    {
+        BannerItem bannerItem = mainService.updateMain(id, title, imageUrl);
 
-        MainItemsResponseDto response = mainService.createMain(bannerItem);
+        return bannerItem;
+    }
+
+    @DeleteMapping("/main-slider/{id}")
+    public BannerItem deleteMainItem (@PathVariable Integer id)
+    {
+        BannerItem bannerItem = mainService.deleteMain(id);
+
+        return bannerItem;
+    }
+
+    @DeleteMapping("/main-slider/clear")
+    public ResponseEntity<MainItemsResponseDto> deleteAllMainItem (){
+        MainItemsResponseDto response = mainService.clearMain();
 
         return ResponseEntity
                 .status(200)
